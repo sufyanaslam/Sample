@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* dashboard screen */
+.scrollbar-assistant {
+  overflow-y: auto;
+  max-height: calc(100vh - 470px);
+}
+
+.team-scrollbar-assistant {
+  overflow-y: auto;
+  max-height: calc(100vh - 77px);
+}
+
+.scrollbar-assistant-list {
+  padding: 0px !important;
+  overflow-y: auto;
+  max-height: calc(100vh - 470px);
+}
+
+/* setting page */
+
+.setting-scrollbar {
+  height: calc(100vh - 0px);
+  overflow-y: auto;
+}
+
+.assistantListScroll {
+  overflow-y: auto;
+  height: 530px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-height: 800px) {
+  .assistantListScroll {
+    height: 315px;
+  }
+}
+
+@media only screen and (min-height: 801px) and (max-height: 900px) {
+  .assistantListScroll {
+    height: 424px;
+  }
+}
+
+.assistantPendingScroll:last-child {
+  margin-bottom: 0px;
+}
+
+.assistantPendingScroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 795px);
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .assistantPendingScroll {
+    max-height: calc(100vh - 430px) !important;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .assistantPendingScroll {
+    max-height: calc(100vh - 580px);
+  }
+}
+
+@media only screen and (min-height: 801px) and (max-height: 900px) {
+  .assistantPendingScroll {
+    max-height: calc(100vh - 698px);
+  }
+}
+
+.bulletProductScroll {
+  height: calc(100vh - 520px);
+  overflow-y: auto;
+}
+
+.setting-scrollbar::-webkit-scrollbar-track,
+.assistantListScroll::-webkit-scrollbar-track,
+.assistantPendingScroll::-webkit-scrollbar-track,
+.team-scrollbar-assistant::-webkit-scrollbar-track,
+.bulletProductScroll::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.setting-scrollbar::-webkit-scrollbar,
+.assistantListScroll::-webkit-scrollbar,
+.assistantPendingScroll::-webkit-scrollbar,
+.team-scrollbar-assistant::-webkit-scrollbar,
+.bulletProductScroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.setting-scrollbar::-webkit-scrollbar-thumb,
+.assistantListScroll::-webkit-scrollbar-thumb,
+.assistantPendingScroll::-webkit-scrollbar-thumb,
+.team-scrollbar-assistant::-webkit-scrollbar-thumb,
+.bulletProductScroll::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.scrollbarChat {
+  overflow-y: auto;
+  height: calc(100vh - 530px);
+  padding: 0px 10px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+}
+
+.recommendBoxScrollbar {
+  height: 270px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (max-height: 800px) {
+  .recommendBoxScrollbar {
+    height: 176px;
+  }
+}
+
+/* @media only screen and (max-height: 801px) and (max-height: 900px) {
+  .recommendBoxScrollbar {
+    height: 270px;
+  }
+} */
+
+/* select client box */
+.selectClient {
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+.personProductsScroll {
+  height: calc(100vh - 490px);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media only screen and (max-height: 900px) {
+  .personProductsScroll {
+    height: calc(100vh - 420px);
+    overflow-y: scroll;
+  }
+
+  .bulletProductScroll {
+    height: auto;
+  }
+}
+
+.scrollbarChat::-webkit-scrollbar-track,
+.MuiAccordionDetails-root::-webkit-scrollbar-track,
+.scrollbar-assistant-list::-webkit-scrollbar-track,
+.scrollbar-assistant::-webkit-scrollbar-track,
+.recommendBoxScrollbar::-webkit-scrollbar-track,
+.dialog-custom-scroll::-webkit-scrollbar-track,
+.selectClient::-webkit-scrollbar-track,
+.personProductsScroll::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.scrollbarChat::-webkit-scrollbar,
+.MuiAccordionDetails-root::-webkit-scrollbar,
+.scrollbar-assistant-list::-webkit-scrollbar,
+.scrollbar-assistant::-webkit-scrollbar,
+.recommendBoxScrollbar::-webkit-scrollbar,
+.dialog-custom-scroll::-webkit-scrollbar,
+.selectClient::-webkit-scrollbar,
+.personProductsScroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.scrollbarChat::-webkit-scrollbar-thumb,
+.MuiAccordionDetails-root::-webkit-scrollbar-thumb,
+.scrollbar-assistant-list::-webkit-scrollbar-thumb,
+.scrollbar-assistant::-webkit-scrollbar-thumb,
+.recommendBoxScrollbar::-webkit-scrollbar-thumb,
+.dialog-custom-scroll::-webkit-scrollbar-thumb,
+.selectClient::-webkit-scrollbar-thumb,
+.personProductsScroll::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*  */
+
+.scrollbar::-webkit-scrollbar-track,
+.scrollbar-queue::-webkit-scrollbar-track,
+.scrollbar-archive-list::-webkit-scrollbar-track,
+.scrollbar-bullet-products::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar,
+.scrollbar-queue::-webkit-scrollbar,
+.scrollbar-archive-list::-webkit-scrollbar,
+.scrollbar-bullet-products::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,
+.scrollbar-queue::-webkit-scrollbar-thumb,
+.scrollbar-archive-list::-webkit-scrollbar-thumb,
+.scrollbar-bullet-products::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(250, 249, 249, 0.5);
+}
+
+/* custom scrollbar */
+.scrollbar {
+  overflow-y: auto;
+  padding: 0px !important;
+  max-height: calc(100vh - 730px);
+}
+
+@media only screen and (max-height: 950px) {
+  .scrollbar {
+    max-height: calc(100vh - 603px);
+  }
+}
+
+.scrollbar-queue {
+  overflow-y: auto;
+  padding: 0px !important;
+  height: 115px;
+}
+
+.MuiAccordionDetails-root {
+  overflow-y: auto;
+  max-height: calc(100vh - 125px);
+}
+
+/* .scrollbar-product-list {
+  max-height: calc(100vh - 442px);
+  overflow-y: auto;
+} */
+
+.scrollbar-archive-list {
+  padding: 0px !important;
+  overflow-y: auto;
+  max-height: calc(100vh - 245px);
+}
+
+.scrollbar-bullet-products {
+  overflow-y: auto;
+  max-height: calc(100vh - 210px);
+}
+
+@media only screen and (max-width: 1279px) {
+  .scrollbar,
+  .assistantListScroll {
+    max-height: 100%;
+  }
+
+  /* .scrollbar-product-list {
+    max-height: 100%;
+  } */
+
+  .scrollbar-archive-list {
+    max-height: 100%;
+  }
+
+  .scrollbar-bullet-products {
+    max-height: 100%;
+    padding-top: 20px;
+  }
+
+  .setting-scrollbar {
+    overflow-y: initial;
+    height: auto;
+  }
+
+  /* .scrollbar-assistant {
+    max-height: 100%;
+  } */
+
+  .personProductsScroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.broadcast {
+  width: 30px;
+  padding-bottom: 10px;
+  opacity: 0.25;
+}
+
+.MuiPaper-root.MuiMenu-paper {
+  background-color: #242f3f !important;
+}
+
+.MuiPaper-root.MuiMenu-paper .MuiListItem-root {
+  color: #ffffff;
+}
